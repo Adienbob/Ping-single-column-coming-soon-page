@@ -1,10 +1,10 @@
 "use client"
 
+import Head from "next/head"
 import Logo from "./components/logo"
 import Header from "./components/header"
 import Buttons from "./components/buttons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Head from "next/head"
 import {
   faFacebookF,
   faTwitter,
@@ -19,7 +19,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ping single column coming soon page</title>
+        <title>Ping – Coming Soon</title>
+        <meta
+          name="description"
+          content="Subscribe and get notified when we launch!"
+        />
       </Head>
       <div className="container">
         <section>
@@ -49,6 +53,5 @@ export default function Home() {
         </footer>
       </div>
     </>
-
   );
 }
